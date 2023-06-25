@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'League Spartan', sans-serif;
+  background-color: hsl(222, 26%, 31%) ;
+  width: 100vw;
+  position: relative;
+}
+
+.App {
+  width: 320px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,50%); 
+ 
+}
+.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 10px;
+  font-size: 25px;
+  color: white;
+}
+
+.theme{
+  display: flex;
+  font-size: 10px;
+  align-items: center;
+  color: white;
+  font-weight: 100;
+  font-weight: lighter;
+}
+.theme-text{
+  padding: 5px;
+}
+.toggle {
+  background: transparent;
+  box-shadow: inset 0 2px 8px 0 rgba(165,170,174,0.25);
+  border-radius: 24px;
+  display: inline-block;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+transition: all 500ms ease; 
+
+}
+
+.toggle-buttton{
+  border-radius: 22px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  background-color:  hsl(223, 31%, 20%);
+  border: 0px solid transparent;
+  margin: 2px;
+  color: #fdfdfd;
+  cursor: pointer;
+
+/* -webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out; */
+transition: all 0.5s ease;
+}
+
+.toggle-button.active {
+  background-image: linear-gradient(-180deg, #fff 0%, #FAFAFA 81%, #F2F2F2 100%);
+  border: 1px solid rgba(207,207,207,0.6);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+  color: #6744B1;
+  font-weight: 500;
+transition: all .5s ease-in;
+}
+
+.display{
+  background-color:transparent;
+  width: 290px;
+  margin: 10px;
+  height: 50px;
+}
+
+.display input{
+  width: 295px;
+  height: 50px;
+  border-radius:6px;
+  box-shadow: transparent;
+  outline-color: none;
+  font-size: 30px;
+  background-color: hsl(224, 36%, 15%);
+}
+
+.text {
+  color: hsl(0, 0%, 100%);
+  text-align: end;
+}
+
+.inputs {
+  background-color: transparent;
+  margin-top: 10px;
+  padding: 15px;
+  width: 295px;
+  height: 250px;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 10px;
+  column-gap: 10px;
+  height: 210px;
+  border-radius: 5px;
+}
+.item7, .item8,.item7, .item8,.item9, .itemDel,.item4, .item5,.item6, .itemplus,.item1, .item2,
+.item3, .itemminus,.itempoint,.item0, .itemdiv,.itemx{
+
+  width: 60px;
+  height: 40px;
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: hsl(221, 14%, 31%);
+}
+
+.resetequal{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 10px;
+}
+
+.itemreset {
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  grid-column-start:1 ;
+  grid-column-end: 3 ;
+  width: 135px;
+  height: 40px;
+  background-color: hsl(225, 21%, 49%);
+  color: white;
+}
+.itemDel {
+  background-color: hsl(225, 21%, 49%);
+  color: white;
+}
+.itemequal {
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  width: 135px;
+  height: 40px;
+  background-color: hsl(6, 63%, 50%);
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
