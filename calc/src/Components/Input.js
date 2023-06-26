@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
+import {evaluate} from "mathjs"
 
-export default function Input({ setDisplayValue }) {
-  const handleNumberClick = (number) => {
+export default function Input({ setDisplayValue, displayValue }) {
+     const handleNumberClick = (number) => {
     setDisplayValue((prevValue) => prevValue + number);
   };
 
@@ -19,7 +20,7 @@ export default function Input({ setDisplayValue }) {
 
   const handleEqualClick = () => {
     try {
-      const evalResult = eval(displayValue); // Use eval with caution
+      const evalResult = evaluate(displayValue); // Use eval with caution
       setDisplayValue(evalResult.toString());
     } catch (error) {
       // Handle any potential errors during evaluation
