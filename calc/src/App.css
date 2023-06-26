@@ -130,6 +130,7 @@ transition: all .5s ease-in;
   justify-content: center;
   font-size: 15px;
   color: hsl(221, 14%, 31%);
+  cursor: pointer;
 }
 
 .resetequal{
@@ -151,6 +152,7 @@ transition: all .5s ease-in;
   height: 40px;
   background-color: hsl(225, 21%, 49%);
   color: white;
+  cursor: pointer;
 }
 .itemDel {
   background-color: hsl(225, 21%, 49%);
@@ -168,4 +170,5 @@ transition: all .5s ease-in;
   background-color: hsl(6, 63%, 50%);
   grid-column-start: 3;
   grid-column-end: 4;
+  cursor: pointer;
 }
